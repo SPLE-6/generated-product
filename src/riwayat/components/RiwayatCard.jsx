@@ -87,12 +87,12 @@ const RiwayatCard = ({ listRiwayat, refresh }) => {
                   const res = await fetch(
                     `${environment.rootApi}/call/pemesanan/update-kamar?idPemesanan=${riwayatItem.idPemesanan}`,
                     {
-                      method: "PUT", // atau "POST" sesuai backend kamu
+                      method: "PUT", 
                       params: {token},
                       headers: {
                         "Content-Type": "application/json",
                       },
-                      body: JSON.stringify({ status: "Selesai" }), // atau payload lain sesuai kebutuhan
+                      body: JSON.stringify({ status: "Selesai" }), 
                     }
                   );
 
